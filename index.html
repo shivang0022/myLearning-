@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Shivang Design cop..!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+ 
+    <header>
+        <div class="logo">Rivaa-solution</div>
+        <nav class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">Services</a>
+            <a href="#">About</a>
+            <a href="#">Upcoming</a>
+           <button class="contact-btn big" onclick="openWhatsApp()">
+  <i class="fab fa-whatsapp"></i> Chat with Us on WhatsApp
+</button>
+
+        </nav>
+        <div class="menu-toggle" onclick="toggleMenu()"><i class="fas fa-bars"></i></div>
+    </header>
+
+    <!-- Body -->
+    <main>
+        
+        <section class="section fade-in">
+            <div class="text">
+                <h1>Custom-Built Website by </h1>
+                <h1>Rivaa Solutions!</h1>
+                <p>At Rivaa Solutions, we specialize in crafting stunning, high-performing websites for restaurants,
+                    hotels, and cafes helping you captivate guests worldwide.</p>
+                <button class="contact-body-btn" onclick="openWhatsApp()">
+  <i class="fab fa-whatsapp"></i> Contact Us
+</button>
+
+            </div>
+            <img src="D:\chatbot\ray.jpg" alt="Web Design Company">
+        </section>
+
+       
+        <section class="section reverse fade-in">
+            <img src="D:\chatbot\image2.jpg" alt="Business Website">
+            <div class="text">
+                <h2>What Can You Achieve With Your Company Website?</h2>
+                <p>Your website is your digital storefront. It can attract clients, boost credibility, showcase your
+                    work, and generate 24/7 leads. Let us unlock that potential for you.</p>
+            </div>
+        </section>
+
+        
+        <section class="section cta fade-in">
+            <h2>“Your Customers Are Searching Online — Be Found First.”</h2>
+            <p>Create a powerful, professional website that grows your business. Click below for a free consultation on
+                WhatsApp.</p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h4>Services</h4>
+                <a href="#">Custom Software</a>
+                <a href="#">Data Analysis</a>
+                <a href="#">Cloud-Base System</a>
+                <a href="#">Cyber Security</a>
+                <a href="#">E-Commerce Platform</a>
+            </div>
+            <div class="footer-column">
+                <h4>Company</h4>
+                <a href="#">Services</a>
+                <a href="#">Locations</a>
+                <a href="#">About</a>
+            </div>
+            <div class="footer-column">
+                <h4>Global</h4>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Services</a>
+            </div>
+            <div class="footer-column">
+                <h4>Upcoming</h4>
+                <a href="#">COMMING-SOONs</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2025 Rivaa. All Rights Reserved.
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+   <script>
+  window.watsonAssistantChatOptions = {
+    integrationID: "cf3f1d92-4abc-46a5-aea1-0f8c5e41cc31", // The ID of this integration.
+    region: "au-syd", // The region your integration is hosted in.
+    serviceInstanceID: "2162fe4a-9722-483a-8d65-ae70555e12a9", // The ID of your service instance.
+    onLoad: async (instance) => { await instance.render(); }
+  };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+    document.head.appendChild(t);
+  });
+</script>
+</body>
+
+</html>
